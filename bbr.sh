@@ -47,8 +47,8 @@ installbbr(){
 		wget -O headers.deb http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.10.15/linux-headers-4.10.15-041015-generic_4.10.15-041015.201705080411_i386.deb
 		wget -O image.deb http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.10.15/linux-image-4.10.15-041015-generic_4.10.15-041015.201705080411_i386.deb
 	elif [[ ${bit} == "x86_64" ]]; then
-		wget -O headers.deb http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.10.15/linux-headers-4.10.15-041015-generic_4.10.15-041015.201705080411_amd64.deb
-		wget -O image.deb http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.10.15/linux-image-4.10.15-041015-generic_4.10.15-041015.201705080411_amd64.deb
+		wget -O headers.deb http://vir.jufxf.kiwi/linux-headers-4.10.15-041015-generic_4.10.15-041015.201705080411_amd64.deb
+		wget -O image.deb http://vir.jufxf.kiwi/linux-image-4.10.15-041015-generic_4.10.15-041015.201705080411_amd64.deb
 	else
 			echo -e "不支持 ${bit} !" && exit 1
 	fi
